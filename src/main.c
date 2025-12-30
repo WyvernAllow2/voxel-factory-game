@@ -1,8 +1,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-
-#include "arena.h"
+#include <stdbool.h>
 
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
@@ -44,6 +43,7 @@ static void on_quit(void) {
 }
 
 static void on_update(float delta_time) {
+    (void)delta_time;
 }
 
 static void on_draw(float delta_time) {
